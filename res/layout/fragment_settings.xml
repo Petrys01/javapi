@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+ 	
+ <PreferenceCategory 
+     android:title="Základní nastavení"
+ 	 android:summary="">
+ 
+<ListPreference 
+    android:key="interval" 
+    android:title="Interval logování"
+ 	android:summary="Nastavení intervalu logování v minutách" 
+ 	android:defaultValue="60"
+	android:entries="@array/interval"
+ 	android:entryValues="@array/interval_values"
+  	android:dialogTitle="Vyberte interval logování:" />
+
+<Preference 
+    android:key="open"
+    android:title="Prohlížeč"
+    android:summary="Otevře kml soubory">
+
+</Preference>
+ 
+ <CheckBoxPreference 
+    android:key="locations"
+ 	android:title="Použít simulované polohy"
+ 	android:summary="Použití poslední známé lokace" /> 
+ 
+</PreferenceCategory>
+
+<PreferenceCategory 
+     android:title="Info o aplikaci"
+ 	 android:summary="">
+
+     <Preference 
+         android:title="Stránky aplikace"
+         android:summary="Otevře stránky">
+    	<intent
+        	android:action="android.intent.action.VIEW"
+        	android:data="http://www.seznam.cz"/>
+	</Preference>
+	
+    <Preference 
+         android:title="Aktuální verze : 1.0">
+	</Preference>     
+
+</PreferenceCategory>
+ 
+</PreferenceScreen>

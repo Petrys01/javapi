@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.ste0067.gpstracker.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Zeměpisná délka: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/wallet_holo_blue_light" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="5dp"
+        android:text="Zeměpisná šířka: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/wallet_holo_blue_light" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv2"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="5dp"
+        android:text="Nadmořská výška: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/wallet_holo_blue_light" />
+
+    
+    
+    
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="30dp"
+        android:text="Počet Satelitů: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/wallet_holo_blue_light" />
+    
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_below="@+id/tv4"
+        android:layout_marginTop="5dp"
+        android:text="Přesnost: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/wallet_holo_blue_light" />
+    
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_below="@+id/tv5"
+        android:layout_marginTop="5dp"
+        android:text="Rychlost: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/wallet_holo_blue_light" />
+    
+    <TextView
+        android:id="@+id/tv_delka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv2"
+        android:layout_toRightOf="@+id/tv3"
+        android:text="---"
+        android:textColor="@color/common_signin_btn_dark_text_pressed"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tv_sirka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv2"
+        android:layout_alignBottom="@+id/tv2"
+        android:layout_alignLeft="@+id/tv_delka"
+        android:text="---"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/common_signin_btn_dark_text_pressed" />
+
+    <TextView
+        android:id="@+id/tv_vyska"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv4"
+        android:layout_alignLeft="@+id/tv_sirka"
+        android:text="---"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/common_signin_btn_dark_text_pressed" />
+
+    <TextView
+        android:id="@+id/tv_sat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv5"
+        android:layout_toRightOf="@+id/tv4"
+        android:text="---"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/common_signin_btn_dark_text_pressed" />
+
+    <TextView
+        android:id="@+id/tv_rychlost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv6"
+        android:layout_alignLeft="@+id/tv_presnost"
+        android:text="---"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/common_signin_btn_dark_text_pressed" />
+
+    <TextView
+        android:id="@+id/tv_presnost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv6"
+        android:layout_alignLeft="@+id/tv_sat"
+        android:text="---"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/common_signin_btn_dark_text_pressed" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_rychlost"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="79dp"
+        android:background="@null"
+        android:src="@drawable/start" />
+
+    <TextView
+        android:id="@+id/tv_fix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton1"
+        android:layout_alignLeft="@+id/tv_vyska"
+        android:layout_marginBottom="22dp"
+        android:text="---"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/common_signin_btn_dark_text_pressed" />
+
+</RelativeLayout>
